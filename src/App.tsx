@@ -18,7 +18,7 @@ export default function App() {
 
   const [selectedProducts, setSelectedProducts] = useState<any[]>([]);
   const [selectionCompleted, setSelectionCompleted] = useState(false);
-  const [pendingSelection, setPendingSelection] = useState(false); // NEW FLAG
+  const [pendingSelection, setPendingSelection] = useState(false);
   //auto fetch data on page change
   const { data, isLoading, isFetching } = useGetArtWorksQuery(page);
 
